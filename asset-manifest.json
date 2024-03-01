@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/lol-shop/static/css/main.e21e6748.css",
+    "main.js": "/lol-shop/static/js/main.92de357d.js",
+    "static/media/logo.svg": "/lol-shop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/lol-shop/index.html",
+    "main.e21e6748.css.map": "/lol-shop/static/css/main.e21e6748.css.map",
+    "main.92de357d.js.map": "/lol-shop/static/js/main.92de357d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e21e6748.css",
+    "static/js/main.92de357d.js"
+  ]
+}
