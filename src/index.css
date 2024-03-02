@@ -90,6 +90,7 @@ nav {
   background: rgb(251, 33, 117);
   background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
   color: #fff;
+  font-weight: 400;
   user-select: none;
 
   cursor: pointer;
@@ -200,6 +201,15 @@ nav {
 .toast {
   width: max-content !important;
   float: right;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0;
 }
 
 @keyframes appear {
