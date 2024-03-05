@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lol-shop/static/css/main.cea5e29e.css",
-    "main.js": "/lol-shop/static/js/main.61461759.js",
+    "main.js": "/lol-shop/static/js/main.65887321.js",
     "static/media/logo.svg": "/lol-shop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/lol-shop/index.html",
     "main.cea5e29e.css.map": "/lol-shop/static/css/main.cea5e29e.css.map",
-    "main.61461759.js.map": "/lol-shop/static/js/main.61461759.js.map"
+    "main.65887321.js.map": "/lol-shop/static/js/main.65887321.js.map"
   },
   "entrypoints": [
     "static/css/main.cea5e29e.css",
-    "static/js/main.61461759.js"
+    "static/js/main.65887321.js"
   ]
 }
