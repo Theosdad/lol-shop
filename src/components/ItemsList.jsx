@@ -1,24 +1,13 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context';
 import { Item } from './Item';
-import { useState } from 'react';
 
-function ItemsList(props) {
-    const { items = [],
-        addToCart = Function.prototype,
-    } = props;
-
-    const [selectedTag, setSelectedTag] = useState(null);
+export const ItemsList = () => {
+    const { items = [], selectedTag, resetFilter } = useContext(ShopContext);
 
     if (!items.length) {
         return <h3>Nothing found</h3>
     }
-
-    const handleTagSelection = (tag) => {
-        setSelectedTag(tag);
-    };
-
-    const resetFilter = () => {
-        setSelectedTag(null);
-    };
 
     return (
         <div>
@@ -34,17 +23,10 @@ function ItemsList(props) {
                     items
                         .filter(item => !selectedTag || item.tags.includes(selectedTag))
                         .map(item => (
-                            <Item
-                                key={item.id}
-                                {...item}
-                                addToCart={addToCart}
-                                handleTagSelection={handleTagSelection}
-                            />
+                            <Item key={item.id} {...item} />
                         ))
                 }
             </ul>
         </div>
     );
 }
-
-export { ItemsList };

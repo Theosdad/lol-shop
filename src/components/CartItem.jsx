@@ -1,13 +1,16 @@
-function CartItem(props) {
+import { useContext } from 'react';
+import { ShopContext } from '../context';
+
+export const CartItem = (props) => {
     const {
         id,
         name,
         price,
         quantity,
-        removeFromCart = Function.prototype,
-        incQuantity = Function.prototype,
-        decQuantity = Function.prototype,
     } = props
+
+    const {removeFromCart, incQuantity, decQuantity } = useContext(ShopContext);
+
     return <li className="collection-item">
         <span>{name}</span>
         <span>
@@ -20,5 +23,3 @@ function CartItem(props) {
         </span>
     </li>
 }
-
-export { CartItem };
